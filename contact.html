@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07070b" />
+    <title>Contact | Luxe Motion</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true"></div>
+    <div id="menu-root"></div>
+
+    <div class="page-wrap">
+      <div id="site-header"></div>
+
+      <main>
+        <section class="section" style="padding-top: 38px">
+          <div class="container">
+            <div class="hero__grid">
+              <div class="hero__card" data-reveal>
+                <div class="hero__inner">
+                  <div class="kicker">
+                    <span class="kicker__spark" aria-hidden="true"></span>
+                    <span>Support • orders • sizing</span>
+                  </div>
+                  <h1 class="h1" style="margin-top: 12px">
+                    Contact <span class="grad">Us</span>
+                  </h1>
+                  <p class="lead">
+                    Need help with sizes, orders, delivery, returns, or product details? Message us and we’ll reply fast.
+                  </p>
+
+                  <div class="hero__card" style="margin-top: 16px" data-reveal>
+                    <div class="hero__inner">
+                      <form id="contactForm" style="display: grid; gap: 12px">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px">
+                          <input class="field" name="name" placeholder="Your name" required />
+                          <input class="field" name="phone" placeholder="Phone / WhatsApp" required />
+                        </div>
+                        <input class="field" type="email" name="email" placeholder="Email" required />
+                        <input class="field" name="subject" placeholder="Subject (Order / Sizing / Returns)" required />
+                        <textarea
+                          class="field"
+                          name="message"
+                          placeholder="Message (include your height/weight for sizing help)"
+                          rows="5"
+                          style="height: auto; padding-top: 12px; padding-bottom: 12px; resize: vertical"
+                          required
+                        ></textarea>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap">
+                          <button class="btn btn--primary" type="submit">Send message</button>
+                          <a class="btn btn--ghost" href="products.html">Browse products</a>
+                          <a class="btn btn--ghost" href="cart.html">Open cart</a>
+                        </div>
+                        <p class="muted" style="margin: 0; font-size: 13px">
+                          We aim to reply within 12 hours on business days. For faster support, reach out via WhatsApp or phone.
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__side">
+                <div class="mini-card" data-reveal>
+                  <p class="mini-card__title">Fast replies</p>
+                  <p class="mini-card__text">
+                    Share your order ID (if any), and we’ll help quickly. For sizing: send height/weight + fit preference.
+                  </p>
+                  <div class="chip-row">
+                    <span class="chip">Sizing help</span>
+                    <span class="chip">Order support</span>
+                    <span class="chip">Returns</span>
+                    <span class="chip">Exchange</span>
+                  </div>
+                </div>
+
+                <div class="mini-card" data-reveal>
+                  <p class="mini-card__title">Store hours</p>
+                  <p class="mini-card__text">Mon–Sat: 10:00 AM – 7:00 PM (edit)</p>
+                  <p class="mini-card__text">Sun: Closed / limited support (edit)</p>
+                </div>
+
+                <div class="mini-card" data-reveal>
+                  <p class="mini-card__title">Address</p>
+                  <p class="mini-card__text">
+                    Your showroom / store address here.<br />
+                    City, State, PIN
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="site-footer"></div>
+    </div>
+
+    <script type="module" src="assets/js/app.js"></script>
+  </body>
+</html>

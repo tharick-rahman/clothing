@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07070b" />
+    <title>Cart | Luxe Motion</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true"></div>
+    <div id="menu-root"></div>
+
+    <div class="page-wrap">
+      <div id="site-header"></div>
+
+      <main>
+        <section class="section" style="padding-top: 38px">
+          <div class="container">
+            <div class="section-title" data-reveal>
+              <div>
+                <h2>Your cart</h2>
+                <p>Quantity controls, remove items, totals + free delivery threshold—fully working.</p>
+              </div>
+              <a class="btn btn--ghost" href="products.html">Continue shopping</a>
+            </div>
+
+            <div class="cart-grid">
+              <div class="panel" data-reveal>
+                <div class="panel__head">
+                  <h2>Items</h2>
+                  <span class="muted" style="font-size: 13px">Saved automatically</span>
+                </div>
+                <div id="cartItems"></div>
+              </div>
+
+              <div class="panel" data-reveal>
+                <div class="panel__head">
+                  <h2>Summary</h2>
+                  <span class="muted" style="font-size: 13px">Fast checkout later</span>
+                </div>
+                <div class="panel__body" id="cartSummary"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="hero__card" data-reveal>
+              <div class="hero__inner">
+                <div class="section-title" style="margin: 0">
+                  <div>
+                    <h2>Need help choosing sizes?</h2>
+                    <p>
+                      Contact us and we’ll recommend the best fit. Tell us your height/weight and how you like your
+                      clothes (regular/oversized).
+                    </p>
+                  </div>
+                  <a class="btn btn--primary" href="contact.html">Contact support</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="site-footer"></div>
+    </div>
+
+    <script type="module" src="assets/js/app.js"></script>
+  </body>
+</html>

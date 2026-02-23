@@ -1,0 +1,350 @@
+/* Page-specific stylesheet kept for your files */
+@import url("assets/css/styles.css");
+
+/* ===== RESPONSIVE FOR ABOUT PAGE ===== */
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero__side {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+
+  .hero__actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero__actions .btn {
+    flex: 1 1 calc(50% - 6px);
+    min-width: 150px;
+  }
+}
+
+/* Small Tablet (576px - 767px) */
+@media (max-width: 767px) {
+  .hero__card {
+    padding: 28px;
+  }
+
+  .hero__grid {
+    gap: 20px;
+  }
+
+  .hero__side {
+    grid-template-columns: 1fr;
+  }
+
+  .h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .lead {
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    padding: 11px 18px;
+  }
+
+  .mini-card {
+    padding: 18px;
+  }
+
+  .mini-card__title {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .mini-card__text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .chip-row {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .chip {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .section-title p {
+    font-size: 13px;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .focus-card {
+    padding: 20px;
+  }
+
+  .focus-card__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .focus-card__text {
+    font-size: 12px;
+  }
+}
+
+/* Mobile (360px - 575px) */
+@media (max-width: 575px) {
+  .section {
+    padding: 36px 0;
+  }
+
+  .hero__card {
+    padding: 20px;
+  }
+
+  .hero__grid {
+    gap: 16px;
+    padding-top: 20px;
+  }
+
+  .kicker {
+    font-size: 10px;
+  }
+
+  .h1 {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .lead {
+    font-size: 12px;
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .hero__side {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .mini-card {
+    padding: 16px;
+  }
+
+  .mini-card__title {
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .mini-card__text {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .chip-row {
+    gap: 5px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .chip {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .section-title {
+    margin-bottom: 24px;
+  }
+
+  .section-title h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .section-title p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .focus-card {
+    padding: 16px;
+  }
+
+  .focus-card__title {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .focus-card__text {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .stat-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .stat b {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  .stat span {
+    font-size: 10px;
+  }
+}
+
+/* Extra Small Mobile (320px - 359px) */
+@media (max-width: 359px) {
+  .section {
+    padding: 24px 0;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .hero__card {
+    padding: 16px;
+  }
+
+  .hero__grid {
+    gap: 12px;
+    padding-top: 16px;
+  }
+
+  .kicker {
+    font-size: 9px;
+  }
+
+  .h1 {
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+  }
+
+  .lead {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  .hero__actions {
+    gap: 6px;
+  }
+
+  .hero__actions .btn {
+    padding: 8px 12px;
+    font-size: 11px;
+    height: 36px;
+  }
+
+  .hero__side {
+    gap: 10px;
+  }
+
+  .mini-card {
+    padding: 12px;
+  }
+
+  .mini-card__title {
+    font-size: 12px;
+  }
+
+  .mini-card__text {
+    font-size: 10px;
+  }
+
+  .chip-row {
+    gap: 4px;
+  }
+
+  .chip {
+    font-size: 9px;
+    padding: 4px 6px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .section-title p {
+    font-size: 11px;
+  }
+
+  .focus-grid {
+    gap: 10px;
+  }
+
+  .focus-card {
+    padding: 12px;
+  }
+
+  .focus-card__title {
+    font-size: 12px;
+  }
+
+  .focus-card__text {
+    font-size: 10px;
+  }
+
+  .stat b {
+    font-size: 16px;
+  }
+
+  .stat span {
+    font-size: 9px;
+  }
+}

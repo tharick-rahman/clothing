@@ -1,0 +1,2 @@
+/* Compatibility file (in case you linked style.css somewhere) */
+@import url("assets/css/styles.css");

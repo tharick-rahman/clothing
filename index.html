@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07070b" />
+    <title>Stackly Clothing Store</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true"></div>
+    <div id="menu-root"></div>
+
+    <div class="page-wrap">
+      <div id="site-header"></div>
+
+      <main>
+        <section class="hero hero--slider">
+          <div class="container">
+            <div class="slider js-hero-slider" data-slider="home-main">
+              <div class="slider__track">
+                <article class="slider__slide is-active">
+                  <img src="assets/img/three.webp" alt="Street luxe hoodie and cargos" />
+                  <div class="slider__overlay">
+                    <p class="slider__kicker">New • 50% OFF</p>
+                    <h2 class="slider__title">Street Luxe Drop</h2>
+                    <p class="slider__text">Oversized hoodies, cargos and tees built to look premium and feel soft.</p>
+                    <div class="hero__actions">
+                      <a class="btn btn--primary" href="products.html">Shop collection</a>
+                      <a class="btn btn--ghost" href="cart.html">View cart</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="slider__slide">
+                  <img src="assets/img/one one.avif" alt="Clean minimal tee and denim" />
+                  <div class="slider__overlay">
+                    <p class="slider__kicker">Essentials</p>
+                    <h2 class="slider__title">Everyday Clean Fits</h2>
+                    <p class="slider__text">Premium basics with sharp necklines and smooth fabric drape.</p>
+                    <div class="hero__actions">
+                      <a class="btn btn--primary" href="products.html">Shop tees</a>
+                      <a class="btn btn--ghost" href="about.html">About our fabrics</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="slider__slide">
+                  <img src="assets/img/two.webp" alt="Matching track set outfit" />
+                  <div class="slider__overlay">
+                    <p class="slider__kicker">Sets</p>
+                    <h2 class="slider__title">Co-ord Ready Looks</h2>
+                    <p class="slider__text">Throw on one matching set and your outfit is done.</p>
+                    <div class="hero__actions">
+                      <a class="btn btn--primary" href="products.html">Shop sets</a>
+                      <a class="btn btn--ghost" href="service.html">Shipping & returns</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="slider__slide">
+                  <img src="assets/img/four.webp" alt="Accessories like caps and tote bags" />
+                  <div class="slider__overlay">
+                    <p class="slider__kicker">Accessories</p>
+                    <h2 class="slider__title">Finish the Look</h2>
+                    <p class="slider__text">Caps, totes and details that complete your Luxe Motion outfit.</p>
+                    <div class="hero__actions">
+                      <a class="btn btn--primary" href="products.html">Shop accessories</a>
+                      <a class="btn btn--ghost" href="contact.html">Talk to us</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <button class="slider__btn slider__btn--prev" type="button" aria-label="Previous slide">
+                ‹
+              </button>
+              <button class="slider__btn slider__btn--next" type="button" aria-label="Next slide">
+                ›
+              </button>
+              <div class="slider__dots" aria-label="Select hero slide"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="hero">
+          <div class="container">
+            <div class="hero__grid">
+              <div class="hero__card" data-reveal>
+                <div class="hero__inner">
+                  <div class="kicker">
+                    <span class="kicker__spark" aria-hidden="true"></span>
+                    <span>New season • luxe street essentials</span>
+                  </div>
+                  <h1 class="h1">
+                    Wear the <span class="grad">statement</span>.<br />
+                    Keep the comfort.
+                  </h1>
+                  <p class="lead">
+                    Stackly Clothing is where modern streetwear meets everyday comfort. We design timeless pieces crafted with premium fabrics, clean cuts, and bold confidence — made for those who want to stand out without trying too hard.
+                  </p>
+                  <div class="hero__actions">
+                    <a class="btn btn--primary" href="products.html">Shop the drop</a>
+                    <a class="btn btn--ghost" href="dash.html">Open dashboard</a>
+                    <a class="btn btn--ghost" href="contact.html">Talk to us</a>
+                  </div>
+                  <div class="stat-row">
+                    <div class="stat">
+                      <b>1499+</b>
+                      <span>Free delivery threshold (₹)</span>
+                    </div>
+                    <div class="stat">
+                      <b>Premium</b>
+                      <span>Fabrics & finishing</span>
+                    </div>
+                    <div class="stat">
+                      <b><span data-cart-count>0</span></b>
+                      <span>Items in your cart</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__side">
+                <div class="mini-card" data-reveal>
+                  <p class="mini-card__title">Today’s style edit</p>
+                  <p class="mini-card__text">
+                    Build a look in 3 moves: premium tee → layered overshirt → tapered cargo. Finish with clean sneakers.
+                  </p>
+                  <div class="chip-row" aria-label="Highlights">
+                    <span class="chip">Oversized fit</span>
+                    <span class="chip">Clean seams</span>
+                    <span class="chip">Soft touch</span>
+                    <span class="chip">Street luxe</span>
+                  </div>
+                </div>
+
+                <div class="mini-card" data-reveal>
+                  <p class="mini-card__title">Designed for You</p>
+                  <p class="mini-card__text">
+                   Every collection at Stackly Clothing is thoughtfully designed to match today’s lifestyle — simple, stylish, and made to move with you.
+                  </p>
+                </div>
+
+                <div class="mini-card" data-reveal>
+                  <p class="mini-card__title">Fast cart experience</p>
+                  <p class="mini-card__text">
+                    Add items from Shop → see the cart badge update instantly → manage quantity on the Cart page. The cart
+                    is saved automatically.
+                  </p>
+                  <div class="hero__actions" style="margin-top: 12px">
+                    <a class="btn btn--primary" href="cart.html">Go to cart</a>
+                    <a class="btn btn--ghost" href="products.html">Explore products</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title" data-reveal>
+              <div>
+                <h2>Featured collection</h2>
+                <p>Hand-picked pieces that look premium, layer cleanly, and elevate your everyday outfits.</p>
+              </div>
+              <a class="btn btn--ghost" href="products.html">See all products</a>
+            </div>
+            <div class="grid" id="featuredGrid"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title" data-reveal>
+              <div>
+                <h2>Why customers love us</h2>
+                <p>We focus on premium feel, strong silhouettes, clean finishing, and smooth online shopping.</p>
+              </div>
+            </div>
+            <div class="dash-grid">
+              <div class="dash-card" data-reveal>
+                <div class="dash-card__head">
+                  <h3>Fabric feel</h3>
+                  <div class="spark" aria-hidden="true"></div>
+                </div>
+                <div class="dash-card__body">
+                  <div class="metric">
+                    <div>
+                      <b>Soft</b>
+                      <div class="muted">Premium hand-feel + comfort stretch</div>
+                    </div>
+                    <div class="bars" aria-hidden="true">
+                      <div class="bar" style="height: 40px"></div>
+                      <div class="bar" style="height: 68px"></div>
+                      <div class="bar" style="height: 78px"></div>
+                      <div class="bar" style="height: 58px"></div>
+                      <div class="bar" style="height: 86px"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dash-card" data-reveal>
+                <div class="dash-card__head">
+                  <h3>Clean fits</h3>
+                  <div class="spark" aria-hidden="true"></div>
+                </div>
+                <div class="dash-card__body">
+                  <div class="metric">
+                    <div>
+                      <b>Sharp</b>
+                      <div class="muted">Minimal seams • premium drape</div>
+                    </div>
+                    <div class="bars" aria-hidden="true">
+                      <div class="bar" style="height: 52px"></div>
+                      <div class="bar" style="height: 44px"></div>
+                      <div class="bar" style="height: 86px"></div>
+                      <div class="bar" style="height: 70px"></div>
+                      <div class="bar" style="height: 60px"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dash-card" data-reveal>
+                <div class="dash-card__head">
+                  <h3>Cart + checkout</h3>
+                  <div class="spark" aria-hidden="true"></div>
+                </div>
+                <div class="dash-card__body">
+                  <div class="metric">
+                    <div>
+                      <b>Fast</b>
+                      <div class="muted">Instant badge, saved cart, clean totals</div>
+                    </div>
+                    <div class="bars" aria-hidden="true">
+                      <div class="bar" style="height: 36px"></div>
+                      <div class="bar" style="height: 64px"></div>
+                      <div class="bar" style="height: 74px"></div>
+                      <div class="bar" style="height: 84px"></div>
+                      <div class="bar" style="height: 90px"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="hero__card" data-reveal>
+              <div class="hero__inner">
+                <div class="section-title" style="margin: 0 0 14px">
+                  <div>
+                    <h2>Ready to upgrade your wardrobe?</h2>
+                    <p>
+                      Shop the new drop, add products to your cart, and experience the full animation + mobile perfect
+                      menu.
+                    </p>
+                  </div>
+                </div>
+                <div class="hero__actions" style="margin-top: 0">
+                  <a class="btn btn--primary" href="products.html">Shop now</a>
+                  <a class="btn btn--ghost" href="about.html">About Stackly Clothing</a>
+                  <a class="btn btn--ghost" href="service.html">Shipping & returns</a>
+                  <a class="btn btn--ghost" href="contact.html">Talk to us</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="site-footer"></div>
+    </div>
+
+    <script type="module" src="assets/js/app.js"></script>
+  </body>
+</html>

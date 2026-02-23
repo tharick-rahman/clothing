@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07070b" />
+    <title>Sign Up - Stackly Clothing Store</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true"></div>
+
+    <div class="signup-container">
+      <div class="signup-wrapper">
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-btn" aria-label="Back to home">
+          <span class="back-icon">←</span>
+          <span>Back to Home</span>
+        </a>
+
+        <!-- Signup Card -->
+        <div class="signup-card">
+          <div class="signup-header">
+            <h1 class="signup-title">Join Stackly</h1>
+            <p class="signup-subtitle">Create your account and start shopping premium fashion</p>
+          </div>
+
+          <form class="signup-form" id="signupForm">
+            <!-- Full Name Input -->
+            <div class="form-group">
+              <label for="fullname" class="form-label">Full Name</label>
+              <div class="input-wrapper">
+                <span class="input-icon">👤</span>
+                <input
+                  type="text"
+                  id="fullname"
+                  class="form-input"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <div class="input-wrapper">
+                <span class="input-icon">✉</span>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+              <label for="password" class="form-label">Password</label>
+              <div class="input-wrapper">
+                <span class="input-icon">🔒</span>
+                <input
+                  type="password"
+                  id="password"
+                  class="form-input"
+                  placeholder="Create a strong password"
+                  required
+                />
+                <button
+                  type="button"
+                  class="show-password-btn"
+                  aria-label="Toggle password visibility"
+                  onclick="togglePassword('password')"
+                >
+                  👁
+                </button>
+              </div>
+              <p class="password-hint">
+                <span id="passwordStrength" class="strength-indicator">Weak</span>
+              </p>
+            </div>
+
+            <!-- Confirm Password Input -->
+            <div class="form-group">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <div class="input-wrapper">
+                <span class="input-icon">🔒</span>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  class="form-input"
+                  placeholder="Confirm your password"
+                  required
+                />
+                <button
+                  type="button"
+                  class="show-password-btn"
+                  aria-label="Toggle password visibility"
+                  onclick="togglePassword('confirmPassword')"
+                >
+                  👁
+                </button>
+              </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number (Optional)</label>
+              <div class="input-wrapper">
+                <span class="input-icon">📱</span>
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-input"
+                  placeholder="+91 XXXXX XXXXX"
+                />
+              </div>
+            </div>
+
+            <!-- Terms & Conditions -->
+            <label class="checkbox-label checkbox-large">
+              <input type="checkbox" class="checkbox-input" id="terms" required />
+              <span>I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="terms-link">Privacy Policy</a></span>
+            </label>
+
+            <!-- Newsletter -->
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox-input" id="newsletter" />
+              <span>Subscribe to our newsletter for offers and updates</span>
+            </label>
+
+            <!-- Signup Button -->
+            <button type="submit" class="btn btn-signup">
+              <span class="btn-text">Create Account</span>
+              <span class="btn-loader"></span>
+            </button>
+          </form>
+
+          <!-- Divider -->
+          <div class="divider">
+            <span>Or sign up with</span>
+          </div>
+
+          <!-- Social Signup -->
+          <div class="social-signup">
+            <button class="social-btn social-google" type="button">
+              <span class="social-icon">G</span>
+            </button>
+            <button class="social-btn social-facebook" type="button">
+              <span class="social-icon">f</span>
+            </button>
+            <button class="social-btn social-twitter" type="button">
+              <span class="social-icon">𝕏</span>
+            </button>
+          </div>
+
+          <!-- Login Link -->
+          <div class="signup-footer">
+            <p>Already have an account?
+              <a href="login.html" class="login-link">Sign in</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative Elements -->
+      <div class="gradient-blob blob-1"></div>
+      <div class="gradient-blob blob-2"></div>
+      <div class="gradient-blob blob-3"></div>
+    </div>
+
+    <script>
+      function togglePassword(fieldId) {
+        const passwordInput = document.getElementById(fieldId);
+        const btn = event.target;
+        
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          btn.textContent = '🙈';
+        } else {
+          passwordInput.type = 'password';
+          btn.textContent = '👁';
+        }
+      }
+
+      // Password strength indicator
+      document.getElementById('password').addEventListener('input', function() {
+        const password = this.value;
+        const strength = document.getElementById('passwordStrength');
+        
+        if (password.length < 6) {
+          strength.textContent = 'Weak';
+          strength.className = 'strength-indicator weak';
+        } else if (password.length < 10) {
+          strength.textContent = 'Fair';
+          strength.className = 'strength-indicator fair';
+        } else if (password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[0-9]/)) {
+          strength.textContent = 'Strong';
+          strength.className = 'strength-indicator strong';
+        } else {
+          strength.textContent = 'Good';
+          strength.className = 'strength-indicator good';
+        }
+      });
+
+      // Form submission
+      document.getElementById('signupForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        
+        if (password !== confirmPassword) {
+          alert('Passwords do not match!');
+          return;
+        }
+        
+        const btn = this.querySelector('.btn-signup');
+        btn.classList.add('loading');
+        
+        // Simulate signup process
+        setTimeout(() => {
+          btn.classList.remove('loading');
+          alert('Account created successfully! (Demo)');
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

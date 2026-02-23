@@ -1,0 +1,169 @@
+/* Page-specific stylesheet kept for your files */
+@import url("assets/css/styles.css");
+
+/* ===== RESPONSIVE FOR DASHBOARD PAGE ===== */
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .dash-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .dash-card--wide {
+    grid-column: span 2;
+  }
+}
+
+/* Small Tablet (576px - 767px) */
+@media (max-width: 767px) {
+  .h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .dash-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .dash-card {
+    padding: 20px;
+  }
+
+  .dash-card--wide {
+    grid-column: span 1;
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .card-stat {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+
+  .card-label {
+    font-size: 12px;
+  }
+
+  .chart-container {
+    height: 220px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Mobile (360px - 575px) */
+@media (max-width: 575px) {
+  .section {
+    padding: 36px 0;
+  }
+
+  .h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .dash-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .dash-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .card-stat {
+    font-size: 22px;
+    margin-bottom: 3px;
+  }
+
+  .card-label {
+    font-size: 11px;
+  }
+
+  .card-subtext {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  .card-actions {
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .card-btn {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .chart-container {
+    height: 180px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Extra Small Mobile (320px - 359px) */
+@media (max-width: 359px) {
+  .section {
+    padding: 24px 0;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .dash-grid {
+    gap: 10px;
+  }
+
+  .dash-card {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .card-title {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .card-stat {
+    font-size: 18px;
+  }
+
+  .card-label {
+    font-size: 10px;
+  }
+
+  .card-subtext {
+    font-size: 10px;
+  }
+
+  .card-actions {
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .card-btn {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+
+  .chart-container {
+    height: 150px;
+  }
+}

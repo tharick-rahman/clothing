@@ -1,0 +1,181 @@
+/* Page-specific stylesheet kept for your files */
+@import url("assets/css/styles.css");
+
+/* ===== RESPONSIVE FOR SERVICE PAGE ===== */
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Small Tablet (576px - 767px) */
+@media (max-width: 767px) {
+  .h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .service-card {
+    padding: 24px;
+  }
+
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .service-card__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .service-card__text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .faq-item {
+    margin-bottom: 12px;
+  }
+
+  .faq-title {
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .faq-content {
+    padding: 14px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile (360px - 575px) */
+@media (max-width: 575px) {
+  .section {
+    padding: 36px 0;
+  }
+
+  .h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .lead {
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .service-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .service-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .service-card__title {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .service-card__text {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .faq-item {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .faq-title {
+    padding: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faq-content {
+    padding: 12px;
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}
+
+/* Extra Small Mobile (320px - 359px) */
+@media (max-width: 359px) {
+  .section {
+    padding: 24px 0;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .lead {
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+
+  .service-grid {
+    gap: 10px;
+  }
+
+  .service-card {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .service-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .service-card__title {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .service-card__text {
+    font-size: 10px;
+  }
+
+  .faq-title {
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .faq-content {
+    padding: 10px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,479 @@
+/* Page-specific stylesheet for home2/lookbook page */
+
+/* ===== HERO SLIDER STYLES (copied from index.css) ===== */
+.hero--slider {
+  padding: 0;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__slide {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slider__slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.slider__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slider__slide.is-active:hover img {
+  transform: scale(1.05);
+}
+
+.slider__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 2;
+  padding: 40px 20px;
+}
+
+.slider__kicker {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accentB);
+  margin: 0 0 16px 0;
+  animation: slideDown 0.6s var(--ease) forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slider__title {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  color: var(--text);
+  animation: slideDown 0.6s var(--ease) 0.1s backwards;
+}
+
+.slider__text {
+  font-size: 16px;
+  max-width: 480px;
+  color: rgba(242, 243, 255, 0.8);
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+  animation: slideDown 0.6s var(--ease) 0.2s backwards;
+}
+
+/* ===== SLIDER BUTTONS ===== */
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: rgba(242, 243, 255, 0.9);
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s var(--ease);
+  backdrop-filter: blur(8px);
+}
+
+.slider__btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.slider__btn--prev {
+  left: 20px;
+}
+
+.slider__btn--next {
+  right: 20px;
+}
+
+/* ===== SLIDER DOTS ===== */
+.slider__dots {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+}
+
+.slider__dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  border: none;
+  padding: 0;
+}
+
+.slider__dot.is-active {
+  background: var(--accentB);
+  width: 24px;
+  border-radius: 4px;
+}
+
+.slider__dot:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* ===== IMAGE FITTING & HOVER ANIMATIONS FOR HOME2 ===== */
+
+/* Ensure product media images fit properly with zoom on hover */
+.product-media {
+  overflow: hidden;
+}
+
+.product-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Ensure hero-shot images fit and zoom on hover */
+.hero-shot {
+  overflow: hidden;
+}
+
+.hero-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===== RESPONSIVE FOR HOME2 PAGE ===== */
+
+/* ===== RESPONSIVE FOR HOME2 SLIDER ===== */
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .hero--slider {
+    min-height: 450px;
+  }
+
+  .slider__title {
+    font-size: 32px;
+  }
+
+  .slider__btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .slider__btn--prev {
+    left: 16px;
+  }
+
+  .slider__btn--next {
+    right: 16px;
+  }
+
+  .promo-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Small Tablet (576px - 767px) */
+@media (max-width: 767px) {
+  .hero--slider {
+    min-height: 350px;
+  }
+
+  .slider__title {
+    font-size: 28px;
+  }
+
+  .slider__text {
+    font-size: 13px;
+  }
+
+  .slider__btn {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .promo-section {
+    padding: 32px 24px;
+  }
+
+  .promo-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .promo-text {
+    font-size: 13px;
+  }
+
+  .promo-btn {
+    padding: 11px 18px;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .feature-title {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .feature-text {
+    font-size: 12px;
+  }
+}
+
+/* Mobile (360px - 575px) */
+@media (max-width: 575px) {
+  .hero--slider {
+    min-height: 280px;
+  }
+
+  .slider__title {
+    font-size: 20px;
+  }
+
+  .slider__text {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .slider__btn {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .slider__btn--prev {
+    left: 12px;
+  }
+
+  .slider__btn--next {
+    right: 12px;
+  }
+
+  .section {
+    padding: 36px 0;
+  }
+
+  .h2 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .promo-section {
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+
+  .promo-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+
+  .promo-text {
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  .promo-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .feature-card {
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .feature-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .feature-title {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .feature-text {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}
+
+/* Extra Small Mobile (320px - 359px) */
+@media (max-width: 359px) {
+  .hero--slider {
+    min-height: 240px;
+  }
+
+  .slider__title {
+    font-size: 18px;
+  }
+
+  .slider__text {
+    font-size: 11px;
+  }
+
+  .slider__btn {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .slider__btn--prev {
+    left: 8px;
+  }
+
+  .slider__btn--next {
+    right: 8px;
+  }
+
+  .section {
+    padding: 24px 0;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .promo-section {
+    padding: 20px 12px;
+    border-radius: 10px;
+  }
+
+  .promo-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .promo-text {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .promo-btn {
+    padding: 8px 12px;
+    font-size: 11px;
+    height: 36px;
+  }
+
+  .feature-grid {
+    gap: 10px;
+  }
+
+  .feature-card {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .feature-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .feature-title {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .feature-text {
+    font-size: 10px;
+  }
+}
+}
