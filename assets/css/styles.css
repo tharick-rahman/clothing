@@ -161,9 +161,10 @@ img{max-width:100%; height:auto; display:block}
 }
 .nav__actions{display:flex; align-items:center; gap:10px}
 
-/* Home dropdown (Home + Home 2) */
+/* Home dropdown (Home + Home 1) */
 .nav__item{
   position:relative;
+  padding-bottom: 8px;
 }
 .nav__trigger{
   display:inline-flex;
@@ -187,7 +188,7 @@ img{max-width:100%; height:auto; display:block}
   width:12px;height:12px;
   border-radius:999px;
   border:1px solid rgba(255,255,255,.24);
-  display:inline-block;
+  display:none;
   position:relative;
 }
 .nav__chevron::before{
@@ -206,7 +207,7 @@ img{max-width:100%; height:auto; display:block}
   position:absolute;
   top:100%;
   left:0;
-  margin-top:6px;
+  margin-top:-2px;
   min-width:190px;
   padding:8px;
   border-radius:16px;
@@ -217,7 +218,7 @@ img{max-width:100%; height:auto; display:block}
   transform: translateY(8px) scale(.97);
   transform-origin: 10% 0%;
   pointer-events:none;
-  transition: opacity .16s var(--ease), transform .16s var(--ease);
+  transition: opacity .2s var(--ease), transform .2s var(--ease), pointer-events .2s var(--ease);
   z-index:30;
 }
 .nav__menu a{
@@ -230,7 +231,7 @@ img{max-width:100%; height:auto; display:block}
   background: rgba(255,255,255,.08);
   color: rgba(242,243,255,.98);
 }
-.nav__item--open .nav__menu{
+.nav__item:hover .nav__menu{
   opacity:1;
   transform: translateY(2px) scale(1);
   pointer-events:auto;

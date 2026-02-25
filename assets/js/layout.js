@@ -31,17 +31,13 @@ export function mountLayout(){
 
             <div class="nav__links" role="navigation" aria-label="Main links">
               <div class="nav__item nav__item--has-menu">
-                <button class="nav__trigger" type="button" data-home-menu-toggle aria-expanded="false">
-                  Home
-                  <span class="nav__chevron" aria-hidden="true"></span>
-                </button>
+                <a class="nav__trigger" href="index.html">Home</a>
                 <div class="nav__menu" data-home-menu>
-                  <a href="index.html">Home1</a>
-                  <a href="home2.html">Home2</a>
+                  <a href="home2.html">Home1</a>
                 </div>
               </div>
               <a href="products.html">Shop</a>
-              <a href="cart.html">Cart</a>
+             
               <a href="dash.html">Dashboard</a>
               <a href="about.html">About</a>
               <a href="service.html">Services</a>
@@ -80,13 +76,9 @@ export function mountLayout(){
 
           <div class="menu__links">
             <div class="menu__item menu__item--has-submenu">
-              <button class="menu__trigger" type="button" data-mobile-home-toggle aria-expanded="false">
-                Home
-                <span class="menu__chevron" aria-hidden="true">›</span>
-              </button>
+              <a class="menu__trigger" href="index.html">Home</a>
               <div class="menu__submenu" data-mobile-home-menu hidden>
-                <a href="index.html">Home1</a>
-                <a href="home2.html">Home2</a>
+                <a href="home2.html">Home1</a>
               </div>
             </div>
             <a href="products.html">Shop</a>
@@ -117,8 +109,11 @@ export function mountLayout(){
           <div class="footer__grid">
             <div>
               <div class="brand brand--logo-only" style="margin-bottom:10px">
+              <a href="index.html">
                 <img class="brand__logo brand__logo--large" src="assets/img/stack logo.png" alt="Stackly Clothing">
-              </div>
+              </a>
+                </div>
+  
               <p class="muted">
                 Stackly Clothing is built for those who value style and comfort.
 We combine premium quality fabrics with trend-driven designs.

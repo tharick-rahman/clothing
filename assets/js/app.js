@@ -454,7 +454,6 @@ function initHeroSlider(){
 // Boot
 mountLayout();
 initNav();
-initHomeDropdown();
 initMobileHomeDropdown();
 initAddToCart();
 renderFeatured();
